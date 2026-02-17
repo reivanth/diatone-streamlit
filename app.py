@@ -4,7 +4,7 @@ import numpy as np
 import plotly.graph_objs as go
 from scipy.optimize import curve_fit
 
-st.set_page_config(layout="wide",initial_sidebar_state="collapsed")
+st.set_page_config(layout="wide")
 st.title("🧪 DiaTone - Breath Sensor AI Analyzer (Interactive)")
 st.write("Upload your breath sensor Excel/CSV file (with Time (s) and WE(1).Resistance (Ω))")
 
