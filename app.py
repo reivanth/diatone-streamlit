@@ -1,10 +1,10 @@
-st.set_page_config(layout="wide")
 import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.graph_objs as go
 from scipy.optimize import curve_fit
 
+st.set_page_config(layout="wide")
 st.title("🧪 DiaTone - Breath Sensor AI Analyzer (Interactive)")
 st.write("Upload your breath sensor Excel/CSV file (with Time (s) and WE(1).Resistance (Ω))")
 
