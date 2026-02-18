@@ -112,7 +112,7 @@ if uploaded_file is not None:
             st.subheader("📝 Detailed Analysis")
             features = {
                 "Feature": ["Peak Height", "Rise Time", "Decay Constant (k)", "AUC", "FWHM", "Rise Slope", "Decay Slope"],
-                "Value": [f"{peak_height:.2f} Ω", f"{rise_time:.2f} s", f"{decay_constant:.4f}", f"{auc:.2f}", f"{fwhm:.2f} s", f"{rise_slope:.2f} Ω/s", f"{decay_slope:.2f} Ω/s"]
+                "Value": [f"{peak_height:.2f} ", f"{rise_time:.2f} s", f"{decay_constant:.4f}", f"{auc:.2f}", f"{fwhm:.2f} s", f"{rise_slope:.2f} Ω/s", f"{decay_slope:.2f} Ω/s"]
             }
             st.table(pd.DataFrame(features))
 
