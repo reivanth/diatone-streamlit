@@ -10,7 +10,7 @@ st.set_page_config(layout="wide", page_title="DiaTone AI Analyzer")
 # Custom CSS to make metric cards look even better
 st.markdown("""
     <style>
-    [data-testid="stMetricValue"] { font-size: 28px; color: #009688; }
+    [data-testid="stMetricValue"] { font-size: 28px; color: #1976D2; }
     </style>
     """, unsafe_allow_html=True)
 
