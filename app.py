@@ -36,13 +36,13 @@ if uploaded_file is not None:
             df["Time_ms"] = df["Time_ms"] / 1000.0
             df["Raw_Value"] = df["Raw_Value"]
 
-        expected_columns = ["Time (s)", "WE(1).Resistance (Ω)"]
+        expected_columns = ["Time_ms", "Raw_Value"]
         
         if not all(col in df.columns for col in expected_columns):
             st.error(f"Missing columns! Need: {expected_columns}")
         else:
-            x = df["Time (s)"].to_numpy()
-            y = df["WE(1).Resistance (Ω)"].to_numpy()
+            x = df["Time_ms"].to_numpy()
+            y = df["Raw_Value"].to_numpy()
 
             # --- VISUALIZATION ---
             st.subheader("📈 Breath Sensor Curve")
