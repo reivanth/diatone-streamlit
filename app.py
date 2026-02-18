@@ -12,7 +12,7 @@ st.markdown("""
     <style>
     [data-testid="stMetricValue"] { font-size: 28px; color: #009688; }
     </style>
-    """, unsafe_allow_stdio=True)
+    """, unsafe_allow_html=True)
 
 st.title("🧪 DiaTone - Breath Sensor AI Analyzer")
 st.write("Upload your breath sensor data to see the AI Feature Extraction in action.")
