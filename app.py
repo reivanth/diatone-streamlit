@@ -47,7 +47,7 @@ if uploaded_file is not None:
             # --- VISUALIZATION ---
             st.subheader("📈 Breath Sensor Curve")
             fig = go.Figure()
-            fig.add_trace(go.Scatter(x=x, y=y, mode='lines', name='Resistance', line=dict(color='#009688', width=3)))
+            fig.add_trace(go.Scatter(x=x, y=y, mode='lines', name='Resistance', line=dict(color='#1976D2', width=3)))
             fig.update_layout(
                 xaxis_title='Time (s)',
                 yaxis_title='Intensity',
