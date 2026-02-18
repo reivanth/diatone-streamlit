@@ -14,7 +14,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.title("🧪 DiaTone")
+st.title("DiaTone")
 st.write("Upload your breath sensor data to see the AI Feature Extraction in action.")
 
 uploaded_file = st.file_uploader("Choose a file (CSV or Excel)", type=['csv', 'xlsx'])
