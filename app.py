@@ -103,7 +103,7 @@ if uploaded_file is not None:
             st.subheader("📊 Key Health Indicators")
             m_col1, m_col2, m_col3, m_col4 = st.columns(4)
             
-            m_col1.metric("Peak Height", f"{peak_height:.1f} Ω")
+            m_col1.metric("Peak Height", f"{peak_height:.1f} ")
             m_col2.metric("Rise Time", f"{rise_time:.2f} s")
             m_col3.metric("Breath Volume (AUC)", f"{auc:.0f}")
             m_col4.metric("FWHM", f"{fwhm:.2f} s")
