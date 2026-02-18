@@ -50,7 +50,7 @@ if uploaded_file is not None:
             fig.add_trace(go.Scatter(x=x, y=y, mode='lines', name='Resistance', line=dict(color='#009688', width=3)))
             fig.update_layout(
                 xaxis_title='Time (s)',
-                yaxis_title='Resistance (Ω)',
+                yaxis_title='Intensity',
                 template='plotly_white',
                 hovermode='x unified'
             )
