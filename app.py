@@ -33,8 +33,8 @@ if uploaded_file is not None:
         # Note: Your Android app saves "Time_ms" and "Raw_Value" 
         # I have added a check to handle both your app format and your desktop format
         if "Time_ms" in df.columns:
-            df["Time (s)"] = df["Time_ms"] / 1000.0
-            df["WE(1).Resistance (Ω)"] = df["Raw_Value"]
+            df["Time_ms"] = df["Time_ms"] / 1000.0
+            df["Raw_Value"] = df["Raw_Value"]
 
         expected_columns = ["Time (s)", "WE(1).Resistance (Ω)"]
         
